@@ -1,5 +1,5 @@
 {
-    "name": "hoavv/ckfinder-laravel-package",
+    "name": "hoavv/ckfinder",
     "description": "CKFinder 3 package for Laravel",
     "type": "library",
     "license": "MIT",
