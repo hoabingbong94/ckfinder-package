@@ -22,6 +22,10 @@
 
 $config = array();
 
+/*============================ Change URL prefix Settings =======================================*/
+$config['urlPrefix'] = '/online';
+
+/*============================ Middleware ============================================*/
 $config['authentication'] = '\CKSource\CKFinderBridge\CKFinderMiddleware';
 
 /*============================ License Key ============================================*/
