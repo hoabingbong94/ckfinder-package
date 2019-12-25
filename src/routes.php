@@ -1,6 +1,6 @@
 <?php
 $config = Config::get('ckfinder.urlPrefix');
-if($config) {
+if(empty($config) || is_null($config)) {
 	$config = '/online';
 }
 Route::group(['prefix' => $config], function () {
