@@ -1,7 +1,7 @@
 <?php
 $config = Config::get('ckfinder.urlPrefix');
-if(isset($config) && is_string($config) || is_null($config)) {	
-	$config = '';
+if(!isset($config) && is_string($config) || is_null($config)) {
+	$config = '/online';
 }
 Route::group(['prefix' => $config], function () {
 	Route::any('/ckfinder/connector', 'CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
